@@ -1,0 +1,19 @@
+[package]
+name = "banderwagon-halo2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[[bin]]
+name="banderwagon-halo2"
+path="src/lib.rs"
+
+[dependencies]
+halo2_proofs = "0.3.0"
+halo2_gadgets = "0.3.0"
+halo2curves = { git = "https://github.com/privacy-scaling-explorations/halo2curves", branch="support_bls12-381" }
+
+[dependencies.group]
+version = "0.13"
